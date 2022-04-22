@@ -145,6 +145,8 @@ body{
 .first-img{
     display: flex;
     align-self: center;
+    margin-top: 5em;
+    margin-bottom: 1em;
 }
 .first-img>img{
     width: 65px;
@@ -155,13 +157,13 @@ body{
     text-align: center;
     display: flex;
     align-self: center;
+    margin-bottom: 1em;
 }
 .first-button{
     display: flex;
     justify-content: center;
     border: 0px;
     padding: 20px;
-    margin-top: 20px;
     margin-bottom: 20px;
     background-color: var(--third-color);
     border-radius: 5px;
