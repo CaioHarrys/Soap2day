@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body{
     --bg-color:#F22248;
     --sec-color:#BF0436;
     --third-color:#8C0335;
-    --fourth-color:#8C0335;
+    --fourth-color:#78022d;
 
     --white-color:#F2F2F2;
 
@@ -59,6 +59,7 @@ body{
 }
 .logo-content>img{
     width: 50px;
+    margin-right: 5px;
 }
 .lista{
     display: flex;
@@ -73,21 +74,26 @@ body{
     margin: 10px;
     font-family: var(--font-one);
 }
+.procurar{
+    background-color: #f1f1f1;
+    border: 0px;
+    border-radius: 20px;
+}
 form.procurar input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 0px;
     border-radius: 0px 20px 20px 0px;
     float: left;
-    width: 50%;
-    background: #f1f1f1;
+    width: 80%;
+    background-color: transparent;
   }
   
   form.procurar button {
     float: left;
     width: 20%;
     padding: 10px;
-    background: ;
+    background: transparent;
     color: white;
     font-size: 17px;
     border:  0px;
@@ -95,14 +101,34 @@ form.procurar input[type=text] {
     cursor: pointer;
   }
   
-  input:hover,button:hover>form.procurar {
-    background: #0b7dda;
+  .procurar:hover {
+    background: #8C0335;
   }
-  
+  input:hover::placeholder{
+      color: #f1f1f1;
+  }
   form.procurar::after {
     content: "";
     clear: both;
     display: table;
+  }
+  .register{
+      display: flex;
+      align-items: baseline;
+  }
+  .register-two{
+      display: flex;
+      flex-direction: row;
+      color: var(--white-color);
+      font-family: var(--font-two);
+      font-size: 11px;
+      font-weight: 200;
+      justify-content: center;
+      align-items: center;
+  }
+  .register-two>img{
+      width: 35px;
+      margin-right: 5px;
   }
 body{
     background-color: var(--bg-color);
@@ -115,4 +141,44 @@ body{
 .first{
     display: flex;
     flex-direction: column;
+}
+.first-img{
+    display: flex;
+    align-self: center;
+}
+.first-img>img{
+    width: 65px;
+}
+.first-text{
+    color: var(--white-color);
+    font-family: var(--font-one);
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+.first-button{
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+.first-button:hover{
+    background-color: var(--fourth-color);
+}
+.first-button-one{
+    color: var(--white-color);
+    font-family: var(--font-one);
+    font-size: 16px;
+    font-weight:400;
+    display: flex;
+    flex-direction: row;
+}
+.first-button-one>img{
+    margin-left: 5px;
+    width: 18px;
+    height: 100%;
 }
