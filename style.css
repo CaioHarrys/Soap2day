@@ -167,6 +167,8 @@ body{
     margin-bottom: 20px;
     background-color: var(--third-color);
     border-radius: 5px;
+    width: 30%;
+    align-self: center;
 }
 .first-button:hover{
     background-color: var(--fourth-color);
@@ -183,4 +185,17 @@ body{
     margin-left: 5px;
     width: 18px;
     height: 100%;
+}
+.first-icons{
+    display: flex;
+    flex-direction: row;
+}
+.first-icons-childs{
+    padding: 10px;
+}
+.first-icon-childs-sons{
+    background-color: #8C0335;
+    color: var(--white-color);
+    font-family: var(--font-two);
+    padding: 5px;
 }
