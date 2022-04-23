@@ -167,7 +167,7 @@ body{
     margin-bottom: 20px;
     background-color: var(--third-color);
     border-radius: 5px;
-    width: 30%;
+    width: auto;
     align-self: center;
 }
 .first-button:hover{
@@ -191,11 +191,46 @@ body{
     flex-direction: row;
 }
 .first-icons-childs{
-    padding: 10px;
+    padding: 2px;
+    margin-bottom: 1em;
+    transition: transform 200ms ease-in-out;
+}
+.first-icons-childs:hover{
+    transform: scale(1.2);
+    transform:translateY(-10px);
 }
 .first-icon-childs-sons{
+    border: 0px;
+    border-radius: 3px;
     background-color: #8C0335;
     color: var(--white-color);
     font-family: var(--font-two);
-    padding: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.first-icon-childs-sons>img{
+    width: 15px;
+    margin-right: 5px;
+}
+#facebook{
+    background-color: rgb(75, 75, 236);
+}
+#twitter{
+    background-color: rgb(0, 106, 255);
+}
+#pinterest{
+    background-color: rgb(163, 13, 13);
+}
+#email{
+    background-color: gray;
+}
+#instagram{
+    background-color: rgb(187, 199, 14);
+}
+#linkedin{
+    background-color:rgb(73, 73, 207)violet;
 }
